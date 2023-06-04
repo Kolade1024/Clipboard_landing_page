@@ -198,6 +198,11 @@ main{
  {
    header{
       background-size: 100%;
+      font-size: larger;
+   }
+
+   .heading{
+      margin-top: 3rem;
    }
 
    .download{
