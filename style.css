@@ -47,8 +47,8 @@ body{
 
 header{
     background-image: url("images/bg-header-mobile.png");
-    background-size:100%;
-    background-repeat: no-repeat;
+    background-size:cover;
+ 
 }
 
 header,footer,.companies,main,div,section,article{
@@ -197,9 +197,14 @@ main{
  @media screen and ( min-width:769px)
  
  {
+   
+
+
    header{
       background-size: 100%;
       font-size: 3rem;
+      background-image: url("images/bg-header-desktop.png");
+   background-size:cover;
    }
 
    h2{
