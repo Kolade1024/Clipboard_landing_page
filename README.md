@@ -13,7 +13,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ## Overview
 
-- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/clipboard-landing-page-NclnDsfHTv)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/clipboard-landing-page-bE-u9ZdLW7)
 
 - Live Site URL: [live site URL](https://kolade1024.github.io/Clipboard_landing_page/)
 
