@@ -11,8 +11,9 @@ img,a{
     width: 100%;
 }
 
-a:hover{
+a:hover, .icons svg:hover{
    transition: 0.5s;
+   transform: scale(1.1);
 }
 
 img{
@@ -174,8 +175,8 @@ main{
  }
 
  .ios:hover,.mac:hover{
-    transition: 0.8s;
-    width: 80%;
+    transition: 0.6s;
+    transform:scale(1.05);
  }
 
  .heading{
@@ -271,10 +272,10 @@ main{
       width: 30%;
    }
 
-   .ios:hover,.mac:hover{
+  /*  .ios:hover,.mac:hover{
       width: 40%;
    }
-
+ */
    footer{
       flex-direction: row;
       flex-wrap: wrap;
