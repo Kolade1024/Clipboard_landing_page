@@ -26,6 +26,7 @@ img{
 :root{
     /* COLORS */
     --BG-COLOR: rgb(255, 255, 255);
+    --BG-COLOR2:hsl(201, 18%, 75%);
     --BTN_COLOR1:hsl(171, 66%, 44%);
     --HOVER1:hsl(171, 63%, 63%);
     --HOVER2:hsl(233, 100%, 75%);
@@ -321,7 +322,7 @@ main{
  }
 
  /* DARKMODE */
- @media (prefers-color-scheme:dark)
+  @media (prefers-color-scheme:dark)
   {
    :root{
       /* COLORS */
@@ -342,7 +343,7 @@ main{
       --FW2:600;
   }
    
- }
+ } 
 
 
 
