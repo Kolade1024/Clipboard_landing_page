@@ -12,8 +12,9 @@ img,a{
 }
 
 a:hover, .icons svg:hover{
-   transition: 0.5s;
-   transform: scale(1.1);
+   transition: 1s;
+   transform: scale(1.2);
+   filter: brightness(120%);
 }
 
 img{
@@ -24,7 +25,7 @@ img{
 
 :root{
     /* COLORS */
-
+    --BG-COLOR: rgb(255, 255, 255);
     --BTN_COLOR1:hsl(171, 66%, 44%);
     --HOVER1:hsl(171, 63%, 63%);
     --HOVER2:hsl(233, 100%, 75%);
@@ -40,8 +41,10 @@ img{
     --FW2:600;
 }
 
+
 body{
     font-family: var(--FF);
+    background-color:var(--BG-COLOR);
 }
 
 
@@ -96,6 +99,36 @@ main{
     margin-bottom: 10rem;
 }
 
+.animate{
+   animation-duration: 2s;
+   animation-name: slide;
+}
+
+.scale{
+   animation-name: scaling;
+   animation-duration: 2s;
+}
+
+@keyframes scaling{
+   from{
+      transform: scale(0.5);
+   }
+
+   to{
+      transform: scale(1.0);
+   }
+}
+
+@keyframes slide {
+   from{
+      transform: translateX(-900px);
+   }
+   to{
+      transform: translateX(0);
+   }
+}
+   
+
 .heading{
     gap:2rem;
 }
@@ -121,7 +154,7 @@ main{
 
  footer{
     padding:2rem;
-    background-color: var(--FCOLOR3);
+    background-color: var(--BG-COLOR2);
     color: var(--FCOLOR1);
     gap: 2rem;
     font-size: var(--FS);
@@ -284,6 +317,30 @@ main{
    footer .logo{
       width: 10%;
    }
+   
+ }
+
+ /* DARKMODE */
+ @media (prefers-color-scheme:dark)
+  {
+   :root{
+      /* COLORS */
+      --BG-COLOR: rgb(30, 36, 43);
+      --BTN_COLOR1:hsl(171, 66%, 44%);
+      --HOVER1:hsl(171, 63%, 63%);
+      --HOVER2:hsl(233, 100%, 75%);
+      --BTN_COLOR2:hsl(233, 100%, 69%);
+      --FCOLOR1: hsl(210, 16%, 76%);
+      --FCOLOR2:hsl(201, 25%, 84%);
+      --FCOLOR3:hsla(201, 33%, 90%, 0.316);
+      --BG-COLOR2:rgb(34, 48, 65);
+  
+      /* FONTS */
+      --FF: "Bai Jamjuree";
+      --FS:18px;
+      --FW1:400;
+      --FW2:600;
+  }
    
  }
 
