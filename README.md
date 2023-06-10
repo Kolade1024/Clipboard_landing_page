@@ -34,6 +34,10 @@ Understood how to add background images and icons to an image
 
 Learnt about em and rem from kelvin powell.
 
+Added hamburger menu.
+
+Implemented Darkmode.
+
 ### Continued development
 
 Media Queries 
