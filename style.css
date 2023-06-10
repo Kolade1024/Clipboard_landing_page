@@ -34,6 +34,8 @@ img{
     --FCOLOR1: hsl(210, 10%, 33%);
     --FCOLOR2:hsl(201, 11%, 66%);
     --FCOLOR3:hsla(202, 11%, 66%, 0.316);
+    --MENU_BG:rgb(100, 99, 104);
+    --NAV_BG: rgba(68, 168, 214, 0.817);
 
     /* FONTS */
     --FF: "Bai Jamjuree";
@@ -258,7 +260,7 @@ main{
  .menu-icon,
  .menu-icon::before,
  .menu-icon::after{
-   background-color: white;
+   background-color: var(--MENU_BG);
    width: 40px;
    height: 5px;
    border-radius: 2rem;
@@ -297,7 +299,7 @@ main{
    animation: show_menu 1s ease ;
    display: none;
    transform-origin: right;
-   background-color: rgba(65, 89, 119, 0.861);
+   background-color:var(--NAV_BG);
    width: 100%;
  }
 
@@ -311,13 +313,17 @@ main{
    }
    
  }
+
+ nav{
+   height: 100vh;
+ }
  nav ul{
    list-style: none;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap:1rem;
+   gap:4rem;
    font-weight: 600;
  }
 
@@ -445,6 +451,8 @@ main{
       --FCOLOR2:hsl(201, 25%, 84%);
       --FCOLOR3:hsla(201, 33%, 90%, 0.316);
       --BG-COLOR2:rgb(34, 48, 65);
+      --NAV_BG: rgba(65, 89, 119, 0.861);
+      --MENU_BG:white;
   
       /* FONTS */
       --FF: "Bai Jamjuree";
