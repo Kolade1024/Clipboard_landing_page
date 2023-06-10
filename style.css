@@ -53,6 +53,7 @@ body{
 header{
     background-image: url("images/bg-header-mobile.png");
     background-size:cover;
+    position: relative;
  
 }
 
@@ -226,9 +227,114 @@ main{
  footer a:hover{
     color:var(--BTN_COLOR1);
  }
+.menu{
+   position: absolute;
+   top:0;
+   width: 100%;
+
+}
+ .menu-button{
+   position: relative;
+   left:140px;
+   margin: 2rem 1.5rem;
+   background-color: transparent;
+   border: none;
+   height: 3rem;
+   width: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+  .menu-button:focus{
+   outline: 1px solid gray;
+   border-radius: 0.5rem;
+  }
+
+  .menu:focus-within .show{ 
+   display: block;
+  }
 
 
+ .menu-icon,
+ .menu-icon::before,
+ .menu-icon::after{
+   background-color: white;
+   width: 40px;
+   height: 5px;
+   border-radius: 2rem;
+   transition: 0.5s;
+   position: absolute;
+   animation: icon ;
+ }
 
+ .menu-icon::before,
+ .menu-icon::after{
+   content: "";
+
+ }
+
+ .menu-icon::before{
+   transform: translateY(-12px);
+ }
+ .menu-icon::after{
+   transform: translateY(12px);
+ }
+
+ .menu:focus-within .menu-icon{
+   background-color: transparent;
+   transform: rotate(720deg);
+ }
+
+ .menu:focus-within .menu-icon::before{
+   transform: rotate(45deg);
+ }
+ .menu:focus-within .menu-icon::after{
+   transform: rotate(-45deg);
+ }
+
+
+ .show{
+   animation: show_menu 1s ease ;
+   display: none;
+   transform-origin: right;
+   background-color: rgba(65, 89, 119, 0.861);
+   width: 100%;
+ }
+
+ @keyframes show_menu {
+   0%{
+      transform: translateX(100%);
+   }
+
+   100%{
+      transform: translateX(0);
+   }
+   
+ }
+ nav ul{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:1rem;
+   font-weight: 600;
+ }
+
+ nav li{
+   width: 80%;
+   border-bottom: 1px solid grey;
+   margin: auto;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   padding: 1rem;
+ }
+
+ ul a{
+   text-decoration: none;
+   color:white;
+ }
  /* LAPTOP */
  @media screen and ( min-width:769px)
  
