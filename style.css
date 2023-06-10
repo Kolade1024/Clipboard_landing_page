@@ -231,8 +231,8 @@ main{
    position: absolute;
    top:0;
    width: 100%;
-
 }
+
  .menu-button{
    position: relative;
    left:140px;
@@ -339,6 +339,9 @@ main{
  @media screen and ( min-width:769px)
  
  {
+   .menu{
+      display: none;
+   }
    
 
 
